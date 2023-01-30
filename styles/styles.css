@@ -1,0 +1,324 @@
+.box {
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  border-radius: 4.5rem;
+  background-color: lightgrey;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.outer {
+  height: 600px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  position: relative;
+  left: 80%;
+  background-color: black;
+  opacity: 80%;
+}
+
+.btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 20%;
+}
+
+.turnonred {
+  background-color: red;
+}
+
+.turnonamber {
+  background-color: orange;
+}
+.turnongreen {
+  background-color: green;
+}
+
+.spandiv {
+  background-color: green;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900);
+
+body {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+header {
+  height: 100%;
+  width: 100%;
+  padding: 120px 50px 170px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/wisconsin-farmland-3.jpg);
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}
+header h1 {
+  text-align: left;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 300px;
+  color: red;
+  mix-blend-mode: difference;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.timer {
+  text-align: center;
+  height: 50px;
+  width: 100px;
+  background-color: black;
+  color: aqua;
+}
+
+.controls {
+  text-align: center;
+
+  display: flex;
+  padding: 5%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h3 {
+  font-size: 200%;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 30px;
+  right: 400px;
+}
+span {
+  font-size: 8rem;
+  position: relative;
+}
+
+span:nth-child(1) {
+  animation: mycolor 5s infinite;
+  animation-delay: 0s;
+}
+
+span:nth-child(2) {
+  animation: mycolor 5s infinite;
+  animation-delay: 0.1s;
+}
+
+span:nth-child(3) {
+  animation: mycolor 5s infinite;
+  animation-delay: 0.2s;
+}
+span:nth-child(4) {
+  animation: mycolor 5s infinite;
+  animation-delay: 0.3s;
+}
+span:nth-child(5) {
+  animation: mycolor 5s infinite;
+  animation-delay: 0.4s;
+}
+span:nth-child(6) {
+  animation: mycolor 5s infinite;
+  animation-delay: 0.5s;
+}
+span:nth-child(7) {
+  animation: mycolor 5s infinite;
+  animation-delay: 0.6s;
+}
+span:nth-child(8) {
+  animation: mycolor 5s infinite;
+  animation-delay: 0.7s;
+}
+span:nth-child(9) {
+  animation: mycolor 5s infinite;
+  animation-delay: 0.8s;
+}
+span:nth-child(10) {
+  animation: mycolor 5s infinite;
+  animation-delay: 0.9s;
+}
+span:nth-child(11) {
+  animation: mycolor 5s infinite;
+  animation-delay: 1s;
+}
+span:nth-child(12) {
+  animation: mycolor 5s infinite;
+  animation-delay: 1s;
+}
+
+@keyframes mycolor {
+  0% {
+    color: red;
+    text-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red, 0 0 20px red,
+      0 0 30px red, 0 0 40px red, 0 0 55px red, 0 0 75px red,
+      40px 34px 20px red(206, 206, 206, 0);
+  }
+
+  10% {
+    color: red;
+    text-shadow: none;
+  }
+
+  20% {
+    color: orange;
+    text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange,
+      0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 55px red,
+      0 0 75px orange, 40px 34px 20px rgba(206, 206, 206, 0);
+  }
+
+  30% {
+    color: orange;
+    text-shadow: none;
+  }
+
+  40% {
+    color: purple;
+    text-shadow: 0 0 5px purple, 0 0 10px purple, 0 0 15px purple,
+      0 0 20px purple, 0 0 30px purple, 0 0 40px purple, 0 0 55px purple,
+      0 0 75px purple, 40px 34px 20px rgba(206, 206, 206, 0);
+  }
+
+  50% {
+    color: purple;
+    text-shadow: none;
+    transform: scale(0.3) translate(-100%, -100%);
+  }
+
+  60% {
+    color: blue;
+    text-shadow: none;
+  }
+  70% {
+    color: black;
+  }
+  80% {
+    transform: matrix(1, 2, 3);
+    color: red;
+    text-shadow: 20 20 20px red, 30 30 40px orange, 40 40 60px yellow,
+      50 50 80px green, 60 60 160px indigo, 70 70 200px violet,
+      80 80 300px purple, 40px 34px 20px rgba(206, 206, 206, 0);
+  }
+
+  90% {
+    color: white;
+    transform: scale3d(1.5, 1.2, 0.3);
+  }
+}
+
+.underline_div {
+  height: 3px;
+  width: 20px;
+}
+
+.underline1 {
+  animation: glow 5s infinite;
+  animation-delay: 0s;
+}
+
+.underline2 {
+  animation: glow 5s infinite;
+  animation-delay: 0.1s;
+}
+
+.underline3 {
+  animation: glow 5s infinite;
+  animation-delay: 0.2s;
+}
+
+.underline4 {
+  animation: glow 5s infinite;
+  animation-delay: 0.3s;
+}
+
+.underline5 {
+  animation: glow 5s infinite;
+  animation-delay: 0.4s;
+}
+
+.underline6 {
+  animation: glow 5s infinite;
+  animation-delay: 0.5s;
+}
+
+.underline7 {
+  animation: glow 5s infinite;
+  animation-delay: 0.6s;
+}
+
+.underline8 {
+  animation: glow 5s infinite;
+  animation-delay: 0.7s;
+}
+
+.underline9 {
+  animation: glow 5s infinite;
+  animation-delay: 0.8s;
+}
+.underline10 {
+  animation: glow 5s infinite;
+  animation-delay: 0.9s;
+}
+
+.underline11 {
+  animation: glow 5s infinite;
+  animation-delay: 1s;
+}
+
+@keyframes glow {
+  0% {
+    background-color: red;
+  }
+
+  10% {
+    background-color: red;
+    box-shadow: red 0px 10px 70px 10px;
+  }
+
+  20% {
+    background-color: orange;
+    box-shadow: none;
+  }
+
+  30% {
+    background-color: orange;
+    box-shadow: orange 0px 10px 70px 10px;
+  }
+
+  40% {
+    background-color: purple;
+    box-shadow: purple 0px 10px 70px 10px;
+  }
+
+  50% {
+    background-color: purple;
+    box-shadow: purple 0px 10px 70px 10px;
+  }
+
+  60% {
+    background-color: blue;
+  }
+  70% {
+    background-color: black;
+  }
+  80% {
+    background-color: white;
+  }
+
+  90% {
+    background-color: white;
+  }
+}
+
+.lazerbox {
+  display: flex;
+}
